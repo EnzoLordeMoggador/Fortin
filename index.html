@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fortin - Cadê meu celular?</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100svh;display:grid;place-items:center;background:#101327;color:#fff;font-family:system-ui,sans-serif;background-image:radial-gradient(ellipse at 50% 36%,#27315a,transparent 66%)}main{width:min(96%,650px);text-align:center;padding:24px 12px}h1{font-size:clamp(25px,5vw,38px);margin:0;color:#ffdb67}p{color:#c9bfdc;margin:8px 0 0}.stage{position:relative}svg{width:100%;height:auto;max-height:70svh;overflow:visible}.hero{transform-origin:300px 490px;animation:breathe 3s ease-in-out infinite}.eyelids{animation:blink 5s infinite;transform-origin:300px 170px}.spark{animation:twinkle 2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.spark:nth-child(2){animation-delay:.6s}.duvida .hero{animation:search .75s ease-in-out 2}.duvida .spark{animation:twinkle .35s infinite}.duvida .normal-face{display:none}.doubt-face{display:none}.duvida .doubt-face{display:inline}.duvida .question{opacity:1;transform:translateY(0)}button{border:0;background:#ffdb67;color:#282038;padding:14px 24px;border-radius:99px;font:700 16px system-ui;cursor:pointer;box-shadow:0 6px 0 #a87830;transition:transform .15s}button:hover{transform:translateY(-2px)}button:active{transform:translateY(4px);box-shadow:0 2px 0 #a87830}button:focus-visible{outline:3px solid white;outline-offset:6px}#fala{min-height:28px;margin:20px 0 0;font-weight:600;color:#f4e7ff}.question{opacity:0;transition:.25s;transform:translateY(12px);font:900 54px system-ui;fill:#ffdb67;stroke:#6a471a;stroke-width:2px}@keyframes breathe{50%{transform:translateY(-4px) scale(1.008)}}@keyframes blink{0%,43%,47%,100%{transform:scaleY(1)}45%{transform:scaleY(.08)}}@keyframes twinkle{50%{transform:scale(.6);opacity:.35}}@keyframes search{25%{transform:translateX(-8px) rotate(-2deg)}65%{transform:translateX(10px) rotate(2deg)}}@media(prefers-reduced-motion:reduce){.hero,.eyelids,.spark,.duvida .hero,.duvida .spark{animation:none}button{transition:none}}
+</style>
+</head>
+<body>
+<main>
+<h1>Fortin</h1>
+<p>Inspirado no uniforme azul, nos cachos com luzes e na cara de quem acabou de esquecer alguma coisa.</p>
+<div class="stage" id="palco">
+<svg viewBox="0 0 600 560" role="img" aria-labelledby="titulo descricao">
+<title id="titulo">Fortin procurando o celular</title>
+<desc id="descricao">Fortin, um personagem adulto de pele morena, cabelo cacheado com luzes amarelas, uniforme azul com o nome Fortin na camisa, botas pretas, braços fortes e expressão de dúvida ao clicar no botão.</desc>
+<defs>
+<linearGradient id="pele" x1="0" x2="1" y2="1"><stop stop-color="#bd8156"/><stop offset=".55" stop-color="#a76542"/><stop offset="1" stop-color="#82452f"/></linearGradient>
+<linearGradient id="uniforme" x2="0" y2="1"><stop stop-color="#2046d8"/><stop offset=".55" stop-color="#17369f"/><stop offset="1" stop-color="#0f2470"/></linearGradient>
+<radialGradient id="halo"><stop stop-color="#ffda75" stop-opacity=".14"/><stop offset="1" stop-color="#ffda75" stop-opacity="0"/></radialGradient>
+</defs>
+<circle cx="300" cy="270" r="235" fill="url(#halo)"/>
+<ellipse cx="300" cy="515" rx="166" ry="19" fill="#0c0b1c" opacity=".55"/>
+<g fill="#ffdc6e" class="stars"><path class="spark" d="M103 110l6 16 16 6-16 6-6 16-6-16-16-6 16-6z"/><path class="spark" d="M492 182l5 12 12 5-12 5-5 12-5-12-12-5 12-5z"/><path class="spark" d="M465 70l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/></g>
+<text class="question" x="412" y="115">?</text>
+<g class="hero" stroke="#4e2c2a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+<!-- pernas e botas -->
+<path d="M235 421l-6 70 55 3 15-68M306 426l14 68 54-3-10-70" fill="url(#uniforme)" stroke="#10236a"/>
+<path d="M229 483l55 2 8 23q-40 15-78 0l3-12zM320 485l53-2 16 14 0 11q-37 15-75 0z" fill="#17181e" stroke="#0b0c10"/>
+<path d="M218 508h73m24 0h74" stroke="#474957"/>
+<!-- braços grandes, com uma mão no peito como na referência -->
+<path d="M232 239C194 210 165 221 151 265L128 246 132 192Q142 179 134 163L110 143Q98 136 89 148L77 166Q73 178 87 190L87 263Q87 283 103 300L150 341Q171 359 195 339L239 296Z" fill="url(#pele)"/>
+<path d="M368 239C405 210 434 221 449 265L474 245 470 194Q459 181 466 166L491 143Q503 136 512 148L524 166Q528 178 514 190L513 263Q513 283 497 300L450 341Q429 359 405 339L361 296Z" fill="url(#pele)"/>
+<path d="M154 270q13-43 43-29m-48 62q20 24 43-1M446 270q-13-43-43-29m48 62q-20 24-43-1M88 187l38 2m346 0 38-2" fill="none" stroke="#75422f"/>
+<!-- uniforme azul estilo camisa de trabalho -->
+<path d="M258 210Q226 209 208 247Q204 282 223 330L235 390Q300 419 365 390L377 330Q396 282 392 247Q374 209 342 210Z" fill="url(#uniforme)" stroke="#10236a"/>
+<path d="M261 202l-4 35q40 27 86 0l-5-35" fill="url(#uniforme)" stroke="#10236a"/>
+<path d="M300 232v145M258 224l42 34 42-34" fill="none" stroke="#83a0ff" stroke-width="4"/>
+<path d="M342 258h48v34h-48z" fill="#123086" stroke="#8aa3ff" stroke-width="3"/>
+<text x="366" y="280" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="900" fill="#eef3ff" stroke="none">Fortin</text>
+<path d="M300 251v39m-32 18q16-9 24 0m16 0q13-9 24 0m-62 24q14-8 23 0m15 0q12-8 22 0" fill="none" stroke="#0b1d67"/>
+<!-- calça azul -->
+<path d="M234 380q66 19 132 0l14 65-63 7-17-32-17 32-63-7z" fill="url(#uniforme)" stroke="#10236a"/>
+<path d="M234 391q66 17 132 0" fill="none" stroke="#83a0ff"/>
+<path d="M300 399v18m0-18-12 13m12-13 12 13" stroke="#dce6ff" fill="none" stroke-width="3"/>
+<!-- orelhas e rosto -->
+<ellipse cx="242" cy="171" rx="17" ry="24" fill="url(#pele)"/><ellipse cx="358" cy="171" rx="17" ry="24" fill="url(#pele)"/>
+<path d="M246 127Q251 89 300 91Q350 91 355 127L352 193Q345 231 302 234Q260 232 249 198Z" fill="url(#pele)"/>
+<!-- cavanhaque e bigode -->
+<path d="M273 189q27 11 55-1" fill="none" stroke="#2b2022" stroke-width="5"/>
+<path d="M286 217q16 9 31 0l-4 12q-13 7-25-1z" fill="#2b2022" stroke="none"/>
+<g class="normal-face">
+<path d="M260 145q14-13 29-5m24-6q15-4 28 9" fill="none" stroke="#302128" stroke-width="8"/>
+<g class="eyelids" stroke-width="3">
+<ellipse cx="277" cy="166" rx="17" ry="21" fill="#fff8e8"/><ellipse cx="326" cy="164" rx="17" ry="21" fill="#fff8e8"/>
+<ellipse cx="284" cy="170" rx="6" ry="8" fill="#302128" stroke="none"/><ellipse cx="320" cy="159" rx="6" ry="8" fill="#302128" stroke="none"/>
+<circle cx="286" cy="167" r="2" fill="white" stroke="none"/><circle cx="322" cy="156" r="2" fill="white" stroke="none"/>
+</g>
+<path d="M299 168l-7 19q8 7 17 0" fill="#b97b52" stroke="#82472f" stroke-width="3"/>
+<path d="M276 199q25 18 50 0" fill="none" stroke="#48242b" stroke-width="5"/>
+</g>
+<g class="doubt-face">
+<path d="M260 149q16-19 31-8m23-2q13 15 28 3" fill="none" stroke="#302128" stroke-width="8"/>
+<ellipse cx="277" cy="167" rx="18" ry="22" fill="#fff8e8"/><ellipse cx="326" cy="167" rx="18" ry="22" fill="#fff8e8"/>
+<ellipse cx="275" cy="166" rx="6" ry="8" fill="#302128" stroke="none"/><ellipse cx="327" cy="166" rx="6" ry="8" fill="#302128" stroke="none"/>
+<circle cx="277" cy="163" r="2" fill="white" stroke="none"/><circle cx="329" cy="163" r="2" fill="white" stroke="none"/>
+<path d="M299 168l-7 19q8 7 17 0" fill="#b97b52" stroke="#82472f" stroke-width="3"/>
+<path d="M281 207q20-14 41 0" fill="none" stroke="#48242b" stroke-width="5"/>
+</g>
+<!-- cachos curtos com luzes, mais parecido com a referência -->
+<path d="M242 145q-18-38 6-62 9-34 41-31 26-20 53 0 36 0 42 32 20 25-24 63l-10-22-93 3z" fill="#201c22" stroke="#19151b"/>
+<g fill="#2f2927" stroke="#19151b" stroke-width="4">
+<circle cx="247" cy="116" r="16"/><circle cx="259" cy="91" r="18"/><circle cx="285" cy="77" r="18"/><circle cx="313" cy="75" r="19"/><circle cx="342" cy="87" r="18"/><circle cx="361" cy="111" r="17"/><circle cx="273" cy="113" r="18"/><circle cx="302" cy="99" r="19"/><circle cx="331" cy="112" r="19"/><circle cx="252" cy="137" r="13"/><circle cx="356" cy="136" r="13"/><circle cx="293" cy="126" r="17"/><circle cx="318" cy="126" r="17"/>
+</g>
+<g fill="none" stroke="#d7bd63" stroke-width="7">
+<path d="M250 91q-10 4-8 14t13 6M273 75q14-8 23 1t-2 14M307 61q16-4 21 8t-6 13M337 77q15 0 17 12t-10 13M260 112q12-8 19 0t-2 14M294 94q13-9 21 1t-5 15M327 105q13-5 18 5t-7 15"/>
+</g>
+<g fill="none" stroke="#fff09a" stroke-width="3"><path d="M273 75q10-5 17 0M308 61q12-2 15 5M337 77q10 0 13 7M260 112q9-6 15-1"/></g>
+</g>
+</svg>
+</div>
+<button id="botao" type="button">Cadê meu celular?</button>
+<p id="fala" aria-live="polite">"Eu deixei ele aqui... eu acho."</p>
+</main>
+<script>
+const palco=document.getElementById('palco');
+const fala=document.getElementById('fala');
+const frases=['"Eu deixei ele aqui... eu acho."','"Alguém viu meu celular?"','"Tá no bolso? Não. No outro? Também não."','"Se ele tocar agora eu finjo que sabia."','"Pera... será que eu tô segurando?"'];
+let indice=0,temporizador;
+document.getElementById('botao').addEventListener('click',()=>{
+ indice=(indice+1)%frases.length;
+ fala.textContent=frases[indice];
+ palco.classList.remove('duvida');
+ void palco.offsetWidth;
+ palco.classList.add('duvida');
+ clearTimeout(temporizador);
+ temporizador=setTimeout(()=>palco.classList.remove('duvida'),1800);
+});
+</script>
+</body>
+</html>
